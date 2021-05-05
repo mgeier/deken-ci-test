@@ -7,10 +7,11 @@ jobs:
       - name: Install deken
         run: |
           sudo apt-get install --no-install-recommends deken
-      - name: Create a home for deken
+      - name: Work-arounds
         # See https://github.com/pure-data/deken/issues/247
         run: |
           mkdir ~/.deken
+          python3 -m pip install hy==0.19
       - name: Run deken
         run: |
           deken -h
