@@ -1,4 +1,4 @@
 Running `deken` on Github Actions
 =================================
 
-How?
+See https://github.com/pure-data/deken/issues/247.

@@ -7,6 +7,10 @@ jobs:
       - name: Install deken
         run: |
           sudo apt-get install --no-install-recommends deken
+      - name: Create a home for deken
+        # See https://github.com/pure-data/deken/issues/247
+        run: |
+          mkdir ~/.deken
       - name: Run deken
         run: |
           deken -h
