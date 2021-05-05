@@ -1,0 +1,12 @@
+name: Run deken
+on: [push, pull_request]
+jobs:
+  deken-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install deken
+        run: |
+          sudo apt-get install --no-install-recommends deken
+      - name: Run deken
+        run: |
+          deken -h
